@@ -1,21 +1,21 @@
-# TodoMVC Example
+# b64-Encoder
 
-[![Demo](https://img.shields.io/website?label=demo&url=https%3A%2F%2Fexamples.yew.rs%2Ftodomvc)](https://examples.yew.rs/todomvc)
+本实例通过[trunk](https://github.com/thedodd/trunk) 运行。
 
-This is an implementation of [TodoMVC](http://todomvc.com/) for Yew.
+`trunk` 安装：
 
-Unlike other implementations, this stores the full state of the model,
-including: all entries, entered text and chosen filter.
+```
+# Install via cargo.
+cargo install --locked trunk
+cargo install wasm-bindgen-cli
+```
 
-## Concepts
+通过`trunk`运行：
 
-- Uses [`StorageService`] to persist the state
-- [`Refs`] are used to manipulate DOM elements after they're rendered (to automatically focus input fields for instance)
+```
+trunk serve
+```
 
-## Improvements
+更详细的trunk玩法见trunk repo:
 
-- Use `yew-router` for the hash based routing
-- Clean up the code
-
-[`storageservice`]: https://docs.rs/yew-services/latest/yew_services/struct.StorageService.html
-[`refs`]: https://yew.rs/docs/en/concepts/components/refs/
+> https://github.com/thedodd/trunk
