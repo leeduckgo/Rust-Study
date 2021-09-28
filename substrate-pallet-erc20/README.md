@@ -9,6 +9,11 @@
 cargo build --release
 ```
 
+## Test
+
+```sh
+cargo test --package pallet-erc20
+```
 
 ## Run
 
